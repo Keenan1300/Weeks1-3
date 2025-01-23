@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 1686819506398738155}
-  sprite: {fileID: 21300000, guid: eb99a2335dce5e04b97b29675ddef408, type: 3}
+  sprites: []
 --- !u!114 &7097782365538656757
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -112,5 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 88e9f04837d4a8f44b66afdf0c743e7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  spriteRenderer: {fileID: 0}
-  sprite: {fileID: 0}
+  spriteRenderer: {fileID: 1686819506398738155}
+  sprites:
+  - {fileID: 21300000, guid: a5e7e8026714e7d419517a28d22be565, type: 3}
+  - {fileID: 21300000, guid: eb99a2335dce5e04b97b29675ddef408, type: 3}
+  - {fileID: 21300000, guid: 1ff34e3c841d91841af27a6ab167cc70, type: 3}

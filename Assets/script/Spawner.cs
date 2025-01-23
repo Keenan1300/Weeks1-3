@@ -18,6 +18,9 @@ public class Spawner : MonoBehaviour
         {
             Vector2 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             GameObject newThing = Instantiate(prefab, mouse, Quaternion.identity);
+
+            newThing.transform.localScale = Vector3.one * Random.Range(0.75f,1.5f);
+
             Destroy(newThing, 5);
         }
     }

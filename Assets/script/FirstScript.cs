@@ -21,6 +21,7 @@ public class FirstScript : MonoBehaviour
         else
         { 
         spriteRenderer.sprite = sprites[Random.Range(0, sprites.Length)];
+            spriteRenderer.sortingOrder = -1;
         }
     }
 
