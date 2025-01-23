@@ -16,7 +16,8 @@ public class Spawner : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            Instantiate(prefab);
+            Vector2 mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            Instantiate(prefab, mouse, Quaternion.identity);
         }
     }
 }
