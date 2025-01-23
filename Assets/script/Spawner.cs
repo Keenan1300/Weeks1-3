@@ -16,7 +16,7 @@ public class Spawner : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-          Instantiate(prefab)
+            Instantiate(prefab);
         }
     }
 }
