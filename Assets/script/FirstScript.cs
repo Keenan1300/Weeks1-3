@@ -11,7 +11,7 @@ public class FirstScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject, 5);
+        spriteRenderer.color = Random.ColorHSV();
     }
 
     // Update is called once per frame
