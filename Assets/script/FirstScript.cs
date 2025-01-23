@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class FirstScript : MonoBehaviour
 {
-    float speed = 0.05f;
+    float speed = 0.9f;
 
     // Start is called before the first frame update
     void Start()
