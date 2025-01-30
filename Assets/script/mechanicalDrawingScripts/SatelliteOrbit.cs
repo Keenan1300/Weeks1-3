@@ -13,15 +13,13 @@ public class SatelliteOrbit : MonoBehaviour
     public Transform start;
     public Transform end;
 
-    float speed = 4;
+    float speed = 0.02f;
 
     // Update is called once per frame
     void Update()
     {
-        //satellite rotates on its own time
-        transform.Rotate(0, 0, speed * Time.deltaTime);
-
-        //Satellite Orbits Earth
-        transform.position = Vector2.Lerp(start.position, end.position, curve.Evaluate(t));
+        Vector3 rot = transform.eulerAngles;
+        rot.z += speed;
+        transform.eulerAngles = rot;
     }
 }
