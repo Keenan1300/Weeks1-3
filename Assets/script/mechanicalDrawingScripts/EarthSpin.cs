@@ -5,12 +5,15 @@ using UnityEngine;
 
 public class EarthSpin : MonoBehaviour
 {
-    float speed = 1.2f;
+    float speed = 0.01f;
+    
  
     // Update earth Every Frame so that it consistently rotates to appear real
     
     void Update()
     {
-        transform.Rotate(0, 0, speed * Time.deltaTime);
+        Vector3 rot = transform.eulerAngles;
+        rot.z += speed;
+        transform.eulerAngles = rot;
     }
 }
