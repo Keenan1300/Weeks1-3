@@ -7,17 +7,15 @@ using UnityEngine;
 
 public class SatelliteOrbit : MonoBehaviour
 {
-    [Range(0, 1)]
-    public float t;
-    public AnimationCurve curve;
-    public Transform start;
-    public Transform end;
+  
+
 
     float speed = 0.02f;
 
     // Update is called once per frame
     void Update()
     {
+        //This code will make the Satellite rotate based on its pivot point (positioned at the center of earth), at a frequent rate. 
         Vector3 rot = transform.eulerAngles;
         rot.z += speed;
         transform.eulerAngles = rot;
